@@ -8,8 +8,8 @@ const util = require("util");
 
 const writeFile = util.promisify(fs.writeFile)
 
-const OUTPUT_DIR = path.resolve(__dirname, "output")
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+
+const outputPath = path.join("index.html");
 
 const render = require("./lib/htmlRenderer");
 const prompts = require('./lib/prompts')
